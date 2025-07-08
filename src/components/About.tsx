@@ -86,17 +86,18 @@ const About: React.FC = () => {
 
             <div className="text-center lg:text-left">
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Kallem Jamimma
+                Bathula Yamini
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                I'm Kallem Jamimma, a Computer Science Engineer passionate about building beautiful 
-                front-end apps, smart backends, and AI-driven solutions. I continuously learn new 
-                tech and work on innovative projects to solve real-world problems.
+               I'm Bathula Yamini, a Computer Science Engineering graduate passionate about applying  
+               AI/ML, Data Analytics, and Engineering skills through real-time virtual internships.  
+               I’ve worked on NLP-based keyword extraction tools and awareness-related tech solutions.  
+               I'm skilled in Python, Java, C++, HTML/CSS and certified in ML, Cloud, and MongoDB.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                From Eluru, Andhra Pradesh, India, I'm dedicated to creating impactful technology 
-                solutions that make a difference. My journey spans across full-stack development, 
-                artificial intelligence, and machine learning.
+                I'm passionate about applying technology to solve real-world problems and always eager  
+                to keep learning. I'm currently seeking an entry-level opportunity where I can grow,  
+                contribute effectively, and collaborate with innovative teams in tech development.
               </p>
               
               <button
