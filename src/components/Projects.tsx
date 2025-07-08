@@ -1,0 +1,209 @@
+import React from 'react';
+import { ExternalLink, Github, Calendar, Tag, Brain, Globe, Shield, Camera } from 'lucide-react';
+import { Project } from '../types';
+
+const Projects: React.FC = () => {
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: 'EduMonitor',
+      description: 'AI-enabled smart feedback system for educational institutions with real-time monitoring and intelligent analytics.',
+      image: 'ai-feed.png',
+      techStack: ['Python', 'Streamlit', 'Machine Learning', 'TensorFlow'],
+      githubUrl: 'https://github.com/jamimma/EduMonitor-AI-Enabled-Smart-Feedback-System-Using-Machine-Learning.git',
+      category: 'AI/ML'
+    },
+    {
+      id: 2,
+      title: 'King Sukh Guest House Website',
+      description: 'Modern, responsive website for a guest house with booking system, gallery, and contact features.',
+      image: 'king.png',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      githubUrl: 'https://github.com/jamimma/king-sukh-project.git',
+      demoUrl: 'https://www.linkedin.com/posts/jamimma_project-demo-rcee-college-website-clone-activity-7346196720797515776-aCth?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmlWNkBZwHSN2uFOBTX2ws09sC_NV76nBc',
+      category: 'Web Development'
+    },
+    {
+      id: 3,
+      title: 'RCEE College Website Clone',
+      description: 'Complete clone of college website with modern design, course information, and student portal.',
+      image: 'Rcee.png',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      githubUrl: 'https://github.com/jamimma/RCEE.git',
+      demoUrl: 'https://demo.example.com',
+      category: 'Web Development'
+    },
+    {
+      id: 4,
+      title: 'Image Reconstruction using ML',
+      description: 'Advanced machine learning project for high-resolution image reconstruction using CNN and OpenCV.',
+      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
+      techStack: ['Python', 'CNN', 'OpenCV', 'TensorFlow'],
+      githubUrl: 'https://github.com/jamimma/-High-Resolution-Image-Reconstruction-A-Sub-Pixel-Approach-Using-Computer-Vision-.git',
+      category: 'AI/ML'
+    },
+    {
+      id: 5,
+      title: 'Cybersecurity Lab',
+      description: 'Virtual threat simulation environment for cybersecurity training and penetration testing.',
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
+      techStack: ['Palo Alto Tools', 'Network Security', 'Penetration Testing'],
+      githubUrl: 'https://github.com/jamimma',
+      category: 'Cybersecurity'
+    }
+  ];
+
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case 'AI/ML':
+        return <Brain className="h-5 w-5" />;
+      case 'Web Development':
+        return <Globe className="h-5 w-5" />;
+      case 'Cybersecurity':
+        return <Shield className="h-5 w-5" />;
+      default:
+        return <Camera className="h-5 w-5" />;
+    }
+  };
+
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case 'AI/ML':
+        return 'bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400';
+      case 'Web Development':
+        return 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400';
+      case 'Cybersecurity':
+        return 'bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400';
+      default:
+        return 'bg-gray-100 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400';
+    }
+  };
+
+  return (
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            My Projects
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Here are some of the projects I've worked on, showcasing my skills across different domains including AI/ML, Web Development, and Cybersecurity.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="group bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+            >
+              {/* Project Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <div className={`flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(project.category)}`}>
+                    {getCategoryIcon(project.category)}
+                    <span>{project.category}</span>
+                  </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                  >
+                    <Github className="h-4 w-4 text-gray-700" />
+                  </a>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                    >
+                      <ExternalLink className="h-4 w-4 text-gray-700" />
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {/* Project Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-sm rounded-full font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Project Links */}
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+                    >
+                      <Github className="h-4 w-4" />
+                      <span className="text-sm">Code</span>
+                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        <span className="text-sm">Demo</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* View More Projects Button */}
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/jamimma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            <Github className="h-5 w-5" />
+            <span>View More on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
