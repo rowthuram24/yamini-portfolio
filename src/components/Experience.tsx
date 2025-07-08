@@ -8,141 +8,161 @@ const Experience: React.FC = () => {
   const internships: Internship[] = [
     {
       id: 1,
-      title: 'Web Developer Intern',
-      company: 'InnoByte Services',
-      period: 'Sep–Oct 2024',
-      description: 'Developed responsive web applications using modern frontend technologies and collaborated with cross-functional teams.',
-      type: 'Web Development'
+      title: 'Data Analytics Intern',
+      company: 'Alteryx, EduSkills',
+      period: '2024',
+      description: 'Worked on data analysis and visualization projects using Alteryx platform.',
+      type: 'Data Analytics',
     },
-    {
+    { 
       id: 2,
-      title: 'AI Internship',
-      company: 'Purple Technologies',
-      period: 'Dec 2024–Apr 2025',
-      description: 'Working on AI-driven solutions and machine learning models for real-world applications.',
-      type: 'AI/ML'
+      title: 'AI/ML Intern',
+      company: 'AWS Academy',
+      period: '2024',
+      description: 'Developed machine learning models and worked with AWS cloud services.',
+      type: 'AI/ML',
     },
     {
       id: 3,
-      title: 'Foundations of AI',
-      company: 'Microsoft + Edunet + AICTE',
-      period: 'Apr–May 2025',
-      description: 'Comprehensive program covering AI fundamentals, machine learning algorithms, and practical implementations.',
-      type: 'AI/ML'
+      title: 'Data Engineering Intern',
+      company: 'AWS Academy',
+      period: '2024',
+      description: 'Built data pipelines and worked with big data technologies.',
+      type: 'Data Engineering',
     },
     {
       id: 4,
-      title: 'High-Resolution Image Reconstruction',
-      company: 'Blackbuck Engineers',
-      period: 'Feb–Apr 2024',
-      description: 'Developed advanced image reconstruction algorithms using deep learning and computer vision techniques.',
-      type: 'AI/ML'
+      title: 'Android Development Intern',
+      company: 'EduSkills/Google',
+      period: '2023',
+      description: 'Developed Android applications using Java and Android Studio.',
+      type: 'Android Development',
     },
     {
       id: 5,
-      title: 'AI-ML Internship',
-      company: 'India Edu Program',
-      period: 'Apr–Jun 2024',
-      description: 'Worked on machine learning projects and gained hands-on experience with TensorFlow and data analysis.',
-      type: 'AI/ML'
+      title: 'NLP Intern',
+      company: 'Blackbuck Engineers',
+      period: '2023',
+      description: 'Worked on natural language processing projects and text analysis.',
+      type: 'NLP',
     },
     {
       id: 6,
-      title: 'Android Internship',
-      company: 'India Edu Program',
-      period: 'Jan–Mar 2024',
-      description: 'Developed Android applications using Java and Kotlin, focusing on user experience and performance optimization.',
-      type: 'Mobile Development'
+      title: 'Software Intern',
+      company: 'Purple Technologies',
+      period: '2023',
+      description: 'Contributed to software development projects and learned industry practices.',
+      type: 'Software',
     },
     {
       id: 7,
-      title: 'Cybersecurity Internship',
-      company: 'Palo Alto Networks',
-      period: 'Sep–Nov 2023',
-      description: 'Gained expertise in network security, threat analysis, and penetration testing using industry-standard tools.',
-      type: 'Cybersecurity'
-    }
+      title: 'Propel5000 Intern',
+      company: 'Propel5000',
+      period: '2023',
+      description: 'Participated in technology acceleration program.',
+      type: 'Innovation',
+    },
+    {
+      id: 8,
+      title: 'NPTEL Data Analytics Intern',
+      company: 'NPTEL',
+      period: '2023',
+      description: 'Completed comprehensive data analytics training and projects.',
+      type: 'Data Analytics',
+    },
   ];
 
   const certifications: Certification[] = [
     {
       id: 1,
-      title: 'C for Everyone',
-      provider: 'Coursera',
-      date: '2023'
+      title: 'Machine Learning with TensorFlow',
+      provider: 'Infosys Springboard',
+      date: '2024',
     },
     {
       id: 2,
-      title: 'Programming in Java',
-      provider: 'NPTEL',
-      date: '2023'
+      title: 'MongoDB Certification',
+      provider: 'Simplilearn',
+      date: '2024',
     },
     {
       id: 3,
-      title: 'Machine Learning with TensorFlow',
+      title: 'Node.js, JavaScript, TypeScript',
       provider: 'Infosys',
-      date: '2024'
+      date: '2024',
     },
     {
       id: 4,
-      title: 'Angular Development',
+      title: 'HTML5 Certification',
       provider: 'Infosys',
-      date: '2024'
+      date: '2024',
     },
     {
       id: 5,
-      title: 'Node.js Development',
-      provider: 'Infosys',
-      date: '2024'
+      title: 'Java Programming',
+      provider: 'Udemy + NPTEL',
+      date: '2023',
     },
     {
       id: 6,
-      title: 'HTML5 & JavaScript',
-      provider: 'Infosys',
-      date: '2024'
+      title: 'C & C++ Programming',
+      provider: 'Coursera + Infosys',
+      date: '2023',
     },
     {
       id: 7,
-      title: 'C++ Mastery',
-      provider: 'Udemy',
-      date: '2023'
+      title: 'DevOps, Agile, CI/CD',
+      provider: 'Infosys',
+      date: '2023',
     },
     {
       id: 8,
-      title: 'Python (Basic)',
-      provider: 'HackerRank',
-      date: '2023'
-    }
+      title: 'Master Data Management',
+      provider: 'TCS iON',
+      date: '2023',
+    },
+    {
+      id: 9,
+      title: 'Sorting Algorithms',
+      provider: 'Simplilearn',
+      date: '2023',
+    },
   ];
 
   const workshops: Workshop[] = [
     {
       id: 1,
-      title: 'Web Development Workshop',
+      title: '4-day Web Development Workshop',
       duration: '4 Days',
-      description: 'Intensive workshop covering modern web development practices, frameworks, and deployment strategies.'
+      description: 'Intensive hands-on web development training covering modern frameworks and best practices.',
     },
     {
       id: 2,
-      title: 'DevOps Workshop',
+      title: '3-day DevOps Workshop',
       duration: '3 Days',
-      description: 'Hands-on workshop on DevOps practices, CI/CD pipelines, and cloud deployment technologies.'
-    }
+      description: 'Container technologies, CI/CD pipelines, and cloud deployment strategies.',
+    },
   ];
 
   const activities: Activity[] = [
     {
       id: 1,
-      title: 'Data Science using Python',
-      organization: 'JNTU Kakinada + IIT Bombay',
-      description: 'Comprehensive program on data science methodologies, Python libraries, and statistical analysis.'
+      title: 'Logical Reasoning Test',
+      organization: 'Lara Technologies',
+      description: 'Participated in aptitude and logical reasoning assessments.',
     },
     {
       id: 2,
-      title: 'Tech Postera & Tech Brainia',
-      organization: 'Adikavi Nannaya University College of Engineering',
-      description: 'Participated in technical poster presentations and brain storming sessions on emerging technologies.'
-    }
+      title: 'Community Service',
+      organization: 'Environmental Project',
+      description: 'Led environmental awareness campaigns and community outreach programs.',
+    },
+    {
+      id: 3,
+      title: 'Tech Events',
+      organization: 'College Activities',
+      description: 'Organized poster presentations and participated in brainstorming sessions.',
+    },
   ];
 
   const getTypeColor = (type: string) => {
