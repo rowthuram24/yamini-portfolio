@@ -5,11 +5,11 @@ const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const texts = [
-    'Aspiring Software Developer',
-    'Front-End & Backend Developer',
-    'Full Stack Enthusiast',
-    'AI-ML Explorer'
-  ];
+  'AI/ML Developer',
+  'Data Analytics Enthusiast',
+  'Full Stack Learner',
+  'Problem Solver'
+];
 
   useEffect(() => {
     let currentText = texts[currentTextIndex];
@@ -82,8 +82,8 @@ const Hero: React.FC = () => {
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 p-1 animate-pulse group-hover:animate-spin transition-all duration-300">
                 <div className="w-full h-full rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300">
                   <img
-                    src="image copy.png"
-                    alt="Kallem Jamimma"
+                    src="image - Copy.png"
+                    alt="Bathula Yamini"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 bg-clip-text text-transparent">
-                Kallem Jamimma
+                Bathula Yamini
               </span>{' '}
               💻
             </h1>
