@@ -78,8 +78,8 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
                 <div className="relative w-full h-full rounded-2xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
                   <img
-                    src="image copy.png"
-                    alt="Kallem Jamimma - Software Developer"
+                    src="image - Copy.png"
+                    alt="Bathula Yamini - Software Developer"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
