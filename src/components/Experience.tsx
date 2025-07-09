@@ -236,9 +236,9 @@ const Experience: React.FC = () => {
                       <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                         {internship.title}
                       </h4>
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${getTypeColor(internship.type)} mt-2 sm:mt-0`}>
-                        {internship.type}
-                      </span>
+                     <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400 mt-2 sm:mt-0">
+                       {internship.type}
+                    </span>
                     </div>
                     <p className="text-purple-600 dark:text-purple-400 font-medium mb-2">
                       {internship.company}
