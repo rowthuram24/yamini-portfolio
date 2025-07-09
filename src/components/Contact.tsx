@@ -39,19 +39,19 @@ const Contact: React.FC = () => {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/jamimma',
+      url: 'https://github.com/yamini12345678',
       color: 'hover:text-gray-700 dark:hover:text-gray-300'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://www.linkedin.com/in/jamimma/',
+      url: 'http://linkedin.com/in/yamini-bathula-743a2b251',
       color: 'hover:text-blue-600 dark:hover:text-blue-400'
     },
     {
       name: 'Gmail',
       icon: Mail,
-      url: 'mailto:kallemjamimma8@gmail.com',
+      url: 'mailto:yaminibattula4@gmail.com',
       color: 'hover:text-red-600 dark:hover:text-red-400'
     }
   ];
