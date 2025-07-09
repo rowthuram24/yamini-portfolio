@@ -129,7 +129,7 @@ const Hero: React.FC = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/jamimma"
+              href="https://github.com/yamini12345678"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/jamimma/"
+              href="http://linkedin.com/in/yamini-bathula-743a2b251"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:kallemjamimma8@gmail.com"
+              href="mailto:yaminibattula4@gmail.com"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400"
             >
               <Mail className="h-6 w-6" />
