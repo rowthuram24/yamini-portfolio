@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-purple-600 dark:text-purple-400" />
             <span className="font-bold text-xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Jamimma.Dev
+              Yamini.Dev
             </span>
           </div>
 
