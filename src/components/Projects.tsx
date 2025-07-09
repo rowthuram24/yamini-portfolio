@@ -79,13 +79,7 @@ const Projects: React.FC = () => {
               key={project.id}
               className="group bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
-              {/* Project Image */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+             
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {/* Category Badge */}
@@ -96,27 +90,7 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-                  >
-                    <Github className="h-4 w-4 text-gray-700" />
-                  </a>
-                  {project.demoUrl && (
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-                    >
-                      <ExternalLink className="h-4 w-4 text-gray-700" />
-                    </a>
-                  )}
-                </div>
+               
               </div>
 
               {/* Project Content */}
