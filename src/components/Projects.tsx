@@ -4,54 +4,35 @@ import { Project } from '../types';
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    {
-      id: 1,
-      title: 'EduMonitor',
-      description: 'AI-enabled smart feedback system for educational institutions with real-time monitoring and intelligent analytics.',
-      image: 'ai-feed.png',
-      techStack: ['Python', 'Streamlit', 'Machine Learning', 'TensorFlow'],
-      githubUrl: 'https://github.com/jamimma/EduMonitor-AI-Enabled-Smart-Feedback-System-Using-Machine-Learning.git',
-      category: 'AI/ML'
-    },
-    {
-      id: 2,
-      title: 'King Sukh Guest House Website',
-      description: 'Modern, responsive website for a guest house with booking system, gallery, and contact features.',
-      image: 'king.png',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-      githubUrl: 'https://github.com/jamimma/king-sukh-project.git',
-      demoUrl: 'https://www.linkedin.com/posts/jamimma_project-demo-rcee-college-website-clone-activity-7346196720797515776-aCth?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmlWNkBZwHSN2uFOBTX2ws09sC_NV76nBc',
-      category: 'Web Development'
-    },
-    {
-      id: 3,
-      title: 'RCEE College Website Clone',
-      description: 'Complete clone of college website with modern design, course information, and student portal.',
-      image: 'Rcee.png',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      githubUrl: 'https://github.com/jamimma/RCEE.git',
-      demoUrl: 'https://demo.example.com',
-      category: 'Web Development'
-    },
-    {
-      id: 4,
-      title: 'Image Reconstruction using ML',
-      description: 'Advanced machine learning project for high-resolution image reconstruction using CNN and OpenCV.',
-      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['Python', 'CNN', 'OpenCV', 'TensorFlow'],
-      githubUrl: 'https://github.com/jamimma/-High-Resolution-Image-Reconstruction-A-Sub-Pixel-Approach-Using-Computer-Vision-.git',
-      category: 'AI/ML'
-    },
-    {
-      id: 5,
-      title: 'Cybersecurity Lab',
-      description: 'Virtual threat simulation environment for cybersecurity training and penetration testing.',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['Palo Alto Tools', 'Network Security', 'Penetration Testing'],
-      githubUrl: 'https://github.com/jamimma',
-      category: 'Cybersecurity'
-    }
-  ];
+  {
+    id: 1,
+    title: 'NLP Keyword Extraction',
+    description: 'Extracted keywords from articles using Machine Learning techniques and natural language processing.',
+    techStack: ['Python', 'NLP', 'Machine Learning', 'TensorFlow'],
+    category: 'AI/ML'
+  },
+  {
+    id: 2,
+    title: 'Environmental Education Awareness',
+    description: 'Outreach & automation tools for environmental education and awareness campaigns.',
+    techStack: ['Python', 'Automation', 'Web Scraping', 'Data Analysis'],
+    category: 'AI/ML'
+  },
+  {
+    id: 3,
+    title: 'RCEE College Website Clone',
+    description: 'Responsive college website with modern design and full functionality.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    category: 'Web Development'
+  },
+  {
+    id: 4,
+    title: 'AI-powered Customer Query Assistant',
+    description: 'Intelligent chatbot system providing instant customer support and query resolution using AI/ML technologies.',
+    techStack: ['Python', 'AI/ML', 'NLP', 'Chatbot', 'Flask'],
+    category: 'AI/ML'
+  }
+];
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
