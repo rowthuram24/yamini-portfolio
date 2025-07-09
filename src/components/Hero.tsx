@@ -7,8 +7,6 @@ const Hero: React.FC = () => {
   const texts = [
   'AI/ML Developer',
   'Data Analytics Enthusiast',
-  'Full Stack Learner',
-  'Problem Solver'
 ];
 
   useEffect(() => {
