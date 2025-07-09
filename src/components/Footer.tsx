@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center space-y-8">
           {/* Logo and Description */}
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-2">Kallem Jamimma</h3>
+            <h3 className="text-2xl font-bold mb-2">Bathula Yamini</h3>
             <p className="text-gray-400 max-w-md">
-              Computer Science Engineer passionate about creating innovative solutions through code.
+             Computer Science Engineer passionate about creating AI/ML solutions and innovative technology projects.
             </p>
           </div>
 
@@ -96,10 +96,10 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2 text-gray-400">
               <span>Designed with</span>
               <Heart className="h-4 w-4 text-red-500 animate-pulse" />
-              <span>by Kallem Jamimma</span>
+              <span>by Bathula Yamini</span>
             </div>
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Kallem Jamimma. All rights reserved.
+              © {new Date().getFullYear()} Bathula Yamini. All rights reserved.
             </div>
           </div>
         </div>
