@@ -119,15 +119,15 @@ const About: React.FC = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">7+</div>
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">8+</div>
               <div className="text-gray-700 dark:text-gray-300 font-medium">Internships</div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">8+</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">9+</div>
               <div className="text-gray-700 dark:text-gray-300 font-medium">Certifications</div>
             </div>
             <div className="bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">5+</div>
+              <div className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-2">4+</div>
               <div className="text-gray-700 dark:text-gray-300 font-medium">Projects</div>
             </div>
             <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
