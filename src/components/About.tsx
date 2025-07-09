@@ -3,47 +3,53 @@ import { Code, Database, Globe, Smartphone, Server, Palette, Brain, FileText, Do
 
 const About: React.FC = () => {
   const skillCategories = [
-    {
-      title: 'Languages',
-      skills: [
-        { name: 'Python', proficiency: 90, color: 'text-yellow-600' },
-        { name: 'Java', proficiency: 85, color: 'text-red-600' },
-        { name: 'C++', proficiency: 80, color: 'text-blue-600' },
-        { name: 'C', proficiency: 75, color: 'text-gray-600' },
-      ]
-    },
-    {
-      title: 'Frontend',
-      skills: [
-        { name: 'HTML', proficiency: 95, color: 'text-orange-600' },
-        { name: 'CSS', proficiency: 90, color: 'text-blue-500' },
-        { name: 'JavaScript', proficiency: 88, color: 'text-yellow-500' },
-        { name: 'Tailwind CSS', proficiency: 85, color: 'text-teal-600' },
-        { name: 'React.js', proficiency: 82, color: 'text-blue-400' },
-      ]
-    },
-    {
-      title: 'Backend & Database',
-      skills: [
-        { name: 'Node.js', proficiency: 80, color: 'text-green-600' },
-        { name: 'Flask', proficiency: 75, color: 'text-gray-700' },
-        { name: 'SQL', proficiency: 85, color: 'text-blue-700' },
-        { name: 'SQLite', proficiency: 80, color: 'text-blue-600' },
-      ]
-    },
-    {
-      title: 'AI/ML & Tools',
-      skills: [
-        { name: 'TensorFlow', proficiency: 78, color: 'text-orange-500' },
-        { name: 'OpenCV', proficiency: 75, color: 'text-green-500' },
-        { name: 'Streamlit', proficiency: 80, color: 'text-red-500' },
-        { name: 'GitHub', proficiency: 90, color: 'text-gray-800' },
-        { name: 'VS Code', proficiency: 95, color: 'text-blue-500' },
-        { name: 'Figma', proficiency: 70, color: 'text-purple-500' },
-        { name: 'Firebase', proficiency: 75, color: 'text-yellow-600' },
-      ]
-    }
-  ];
+  {
+    title: 'Languages',
+    skills: [
+      { name: 'Python', proficiency: 90, color: 'text-purple-500' },
+      { name: 'Java', proficiency: 85, color: 'text-purple-500' },
+      { name: 'C++', proficiency: 80, color: 'text-purple-500' },
+      { name: 'C', proficiency: 75, color: 'text-purple-500' },
+    ],
+  },
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'HTML', proficiency: 95, color: 'text-purple-500' },
+      { name: 'CSS', proficiency: 90, color: 'text-purple-500' },
+      { name: 'JavaScript', proficiency: 85, color: 'text-purple-500' },
+      { name: 'Tailwind CSS', proficiency: 80, color: 'text-purple-500' },
+      { name: 'React.js', proficiency: 75, color: 'text-purple-500' },
+    ],
+  },
+  {
+    title: 'Backend/Database',
+    skills: [
+      { name: 'Node.js', proficiency: 75, color: 'text-purple-500' },
+      { name: 'Flask', proficiency: 70, color: 'text-purple-500' },
+      { name: 'Firebase', proficiency: 80, color: 'text-purple-500' },
+      { name: 'SQL', proficiency: 85, color: 'text-purple-500' },
+    ],
+  },
+  {
+    title: 'AI/ML Tools',
+    skills: [
+      { name: 'TensorFlow', proficiency: 80, color: 'text-purple-500' },
+      { name: 'OpenCV', proficiency: 75, color: 'text-purple-500' },
+      { name: 'Streamlit', proficiency: 85, color: 'text-purple-500' },
+    ],
+  },
+  {
+    title: 'Others',
+    skills: [
+      { name: 'GitHub', proficiency: 90, color: 'text-purple-500' },
+      { name: 'Figma', proficiency: 75, color: 'text-purple-500' },
+      { name: 'VS Code', proficiency: 95, color: 'text-purple-500' },
+      { name: 'AWS', proficiency: 70, color: 'text-purple-500' },
+    ],
+  },
+];
+
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
