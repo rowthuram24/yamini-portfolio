@@ -79,46 +79,6 @@ const Projects: React.FC = () => {
               key={project.id}
               className="group bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
-              {/* Project Image */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                  <div className={`flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(project.category)}`}>
-                    {getCategoryIcon(project.category)}
-                    <span>{project.category}</span>
-                  </div>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-                  >
-                    <Github className="h-4 w-4 text-gray-700" />
-                  </a>
-                  {project.demoUrl && (
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-                    >
-                      <ExternalLink className="h-4 w-4 text-gray-700" />
-                    </a>
-                  )}
-                </div> 
-              </div>
-
               {/* Project Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
@@ -140,31 +100,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Project Links */}
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
-                    >
-                      <Github className="h-4 w-4" />
-                      <span className="text-sm">Code</span>
-                    </a>
-                    {project.demoUrl && (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                        <span className="text-sm">Demo</span>
-                      </a>
-                    )}
-                  </div>
-                </div>
+               
               </div>
             </div>
           ))}
